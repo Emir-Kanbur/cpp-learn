@@ -1,0 +1,27 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# C++ Compilation
+build/
+bin/
+out/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+*.app
+*.dSYM/
+
+# Other
+tmp/
+*.log
