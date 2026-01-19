@@ -1,36 +1,90 @@
-# C++ Learning Journey (C++ Öğrenme Yolculuğu)
+# 🚀 C++ Learning Journey (C++ Öğrenme Yolculuğu)
 
-Bu repository, C++ programlama dilini öğrenirken aldığım notları, yaptığım alıştırmaları ve örnek kodları içermektedir.
+![Language](https://img.shields.io/badge/Language-C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Focus](https://img.shields.io/badge/Focus-Algorithm%20%26%20Data%20Structures-orange?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+Bu repository, C++ programlama dilini öğrenme sürecimde oluşturduğum notları, çözdüğüm algoritmik problemleri, sınav sorularını ve proje örneklerini içermektedir. Sıfırdan ileri seviyeye kadar adım adım ilerleyen bir öğrenim arşivini temsil eder.
 
 ## 📂 Proje Yapısı
 
-Proje, öğrenim kaynaklarına göre kategorize edilmiştir:
+Repo, takip edilen eğitim kaynaklarına göre iki ana kategoriye ayrılmıştır:
 
-- **cpp-udemy/**: Udemy kurslarından takip edilen ders notları ve pratikler.
-- **cpp-youtube/**: Çeşitli YouTube eğitim kanallarından (örneğin Yazılım Bilimi vb.) alınan notlar ve kod örnekleri.
+### 1. 🎓 Udemy Eğitimleri (`cpp-udemy/`)
 
-## 🚀 Başlangıç
+Udemy üzerinden takip edilen kapsamlı C++ eğitim serisi notlarını ve pratik uygulamaları içerir.
 
-Bu kodları çalıştırmak için bilgisayarınızda bir C++ derleyicisi (GCC, Clang veya MSVC) yüklü olmalıdır.
+- **Temeller**: Değişkenler, Veri Tipleri (`int`, `float`, `char` vb.), Matematiksel Operatörler.
+- **Akış Kontrolü**: `if-else`, `switch-case` yapıları ve örnekleri.
+- **Döngüler**: `for`, `while`, `do-while` döngüleri ve `break/continue` kullanımı.
+- **Fonksiyonlar**: Fonksiyon tanımlama, parametreler, Function Overloading (Aşırı Yükleme).
+- **Sınav & Pratikler**: `quiz`, `midterm` soruları ve çözümleri.
 
-### Derleme ve Çalıştırma (Terminal)
+### 2. 📺 YouTube Kaynakları (`cpp-youtube/`)
+
+YouTube üzerindeki değerli eğitmenlerden (**Sefa Ekici**, **Fehmi Uyar** ve **Yazılım Bilimi**) alınan notlar ve kod örnekleri.
+
+- **Giriş Seviyesi**: `cout`, `cin` mantığı ve ilk programlar.
+- **Algoritmalar**: Faktöriyel hesaplama, aritmetik işlemler.
+- **Konu Pratikleri**: Konu bazlı ayrılmış basit ve orta seviye örnekler.
+
+## 🛠️ Kullanılan Teknolojiler
+
+- **Dil:** C++ (Standart 11/14/17/20)
+- **Derleyici:** GCC (G++) / Clang
+- **IDE/Editör:** Visual Studio Code
+
+## 🚀 Kurulum ve Çalıştırma
+
+Bu projedeki kodları kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyebilirsiniz.
+
+### 1. Projeyi Klonlayın
 
 ```bash
-g++ dosya_adi.cpp -o program
-./program
+git clone https://github.com/Emir-Kanbur/cpp-learn.git
+cd cpp-learn
 ```
 
-## 📝 İçerik
+### 2. Derleme (Terminal)
 
-Temel C++ konularını kapsamaktadır:
+Örnek olarak `cpp-udemy` klasöründeki bir dosyayı derlemek için:
 
-- Değişkenler ve Veri Tipleri
-- Operatörler
-- Kontrol Yapıları (If-Else, Switch-Case)
-- Döngüler (For, While, Do-While)
-- Fonksiyonlar
-- Ve daha fazlası...
+```bash
+# Klasöre gidin
+cd cpp-udemy
+
+# Dosyayı derleyin (g++ kullanarak)
+g++ 1-start.cpp -o program
+
+# Windows kullanıyorsanız:
+# g++ 1-start.cpp -o program.exe
+```
+
+### 3. Çalıştırma
+
+```bash
+# Mac/Linux
+./program
+
+# Windows
+program.exe
+```
+
+## 🔗 Kaynaklar & Teşekkür
+
+Bu öğrenme yolculuğunda aşağıdaki kaynaklardan faydalanılmıştır:
+
+- **Sefa Ekici** (YouTube C++ Dersleri)
+- **Fehmi Uyar** (YouTube C++ Dersleri)
+- **Yazılım Bilimi**
+- **Udemy** C++ Kurs materyalleri
 
 ## 👤 Yazar
 
-Emir Kanbur
+**Emir Kanbur**
+
+- GitHub: [@Emir-Kanbur](https://github.com/Emir-Kanbur)
+
+---
+
+⭐️ **Bu projeyi faydalı bulduysanız sağ üst köşeden yıldız vermeyi unutmayın!**
