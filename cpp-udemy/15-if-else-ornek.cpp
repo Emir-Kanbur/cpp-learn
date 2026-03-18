@@ -9,7 +9,7 @@ int main()
     cout << "Lütfen sayilari giriniz: ";
     cin >> sayi1;
     cout << "Lütfen sayilari giriniz: ";
-    cin >> sayi2İ
+    cin >> sayi2;
 
     cout << "Yapılacak işlmei seçiniz (Toplama (1), Çikarma(2), Çarpma(3), Bölme(4)) ";
     cin >> islem;

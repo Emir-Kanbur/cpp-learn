@@ -11,7 +11,7 @@ int main ()
 
     cout << "time(0): " << time(0) << endl;
 
-    srand(time(0)) // Rastgele sayı üreticisini zamanla besliyoruz
+    srand(time(0)); // Rastgele sayı üreticisini zamanla besliyoruz
     
     int rastgeleSayi = rand();
     cout << "Uretilen rastgele sayi: " << rastgeleSayi << endl;
