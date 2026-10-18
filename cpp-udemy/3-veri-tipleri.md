@@ -1,23 +1,16 @@
 ## Veri Tipleri
 
-# Primitive Veri Türleri:
+# Yerleşik Veri Türleri
 
-- int 4 byte yer kaplamaktadır.
+Türlerin boyutu platforma ve derleyiciye göre değişebilir. `sizeof` sonucu bayt cinsindendir.
 
-- char 1 byte yer kaplamaktadır.
-- Tek tırnak içinde tanım yapılabilir. Tek bir karakter tutabilir.
+- `int`: Tam sayılar için kullanılır; çoğu güncel sistemde 4 bayttır.
+- `char`: En az 1 bayttır. Karakter sabitleri tek tırnakla yazılır (`'A'`).
+- `bool`: `true` veya `false` değerini tutar.
+- `float`: Ondalıklı sayılar için tek duyarlıklı türdür.
+- `double`: Ondalıklı sayılar için genellikle daha yüksek duyarlıklıdır.
 
-- bool 1 byte yer kaplamaktadır.
-- True ya da False değerlerini tutabilir.
+## Diğer türler
 
-- float 4 byte yer kaplamaktadır.
-- Ondalık değerleri tutabilmek içindir.
-
-- double 8 byte yer kaplamaktadır.
-- Ondalık değerleri tutabilmektedir. Float'a oranla çok daha gelişmiştir.
-
----
-
-- string -> metin tutar
-
-- void -> Herhangi bir değeri yok.
+- `std::string`: Metin tutar; `<string>` başlık dosyasıyla kullanılır. Yerleşik tür değil, standart kütüphane türüdür.
+- `void`: Değer taşımayan türdür; örneğin değer döndürmeyen fonksiyonlarda kullanılır.

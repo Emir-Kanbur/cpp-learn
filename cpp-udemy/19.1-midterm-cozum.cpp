@@ -6,7 +6,7 @@ int main()
 int x = 5;
 int y = 10;
 
- if ( x = 20) 
+ if ((x = 20))
  {
   if (y == 10)
    cout << "** ";
