@@ -1,27 +1,66 @@
-# System Files
+# Operating system files
 .DS_Store
+._*
 Thumbs.db
+Desktop.ini
 
-# IDEs
+# IDEs and editors
 .vscode/
 .idea/
+.history/
 *.swp
 *.swo
+*~
 
-# C++ Compilation
-build/
-bin/
-out/
+# C++ compiler and linker outputs
 *.o
 *.obj
-*.exe
-*.dll
+*.a
+*.lib
 *.so
 *.dylib
+*.dll
+*.exe
 *.out
 *.app
 *.dSYM/
+*.pdb
+*.ilk
+*.pch
+*.gch
+*.mod
+*.smod
+*.stackdump
+core
+core.*
 
-# Other
-tmp/
+# Build output directories
+/build/
+/bin/
+/out/
+/cmake-build-*/
+**/build/
+**/bin/
+**/out/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+compile_commands.json
+
+# Test coverage and profiling output
+*.gcda
+*.gcno
+*.gcov
+*.prof
+*.profraw
+*.profdata
+
+# Logs and temporary files
 *.log
+*.tmp
+*.temp
+*.bak
+*.orig
