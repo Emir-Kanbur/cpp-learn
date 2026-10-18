@@ -8,15 +8,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 5
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Setup compiler
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y g++
 
       - name: Compile all C++ files
         run: |
@@ -25,6 +23,11 @@ jobs:
 
           while IFS= read -r -d '' file; do
             output="/tmp/cpp-build/$(echo "$file" | tr '/ +' '___').out"
-            echo "Compiling: $file"
-            g++ -std=c++17 "$file" -o "$output"
+            if grep -Eq '^[[:space:]]*int[[:space:]]+main[[:space:]]*\(' "$file"; then
+              echo "Compiling and linking: $file"
+              g++ -std=c++17 "$file" -o "$output"
+            else
+              echo "Compiling translation unit: $file"
+              g++ -std=c++17 -c "$file" -o "${output%.out}.o"
+            fi
           done < <(find . -type f -name "*.cpp" -print0)
