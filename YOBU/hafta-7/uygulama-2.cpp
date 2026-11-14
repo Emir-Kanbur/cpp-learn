@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int main () {
@@ -6,15 +7,21 @@ int main () {
     int n;
 
     cout << "Kaç elemanlı dizi gireceksiniz: ";
-    cin >> n;
+    if (!(cin >> n) || n <= 0) {
+        cerr << "Dizi boyutu pozitif bir tam sayı olmalı.\n";
+        return 1;
+    }
     
-    int dizi[n];
+    vector<int> dizi(n);
     cout << n << " adet sayıyı giriniz: " ;
     
     for (int i = 0; i < n; i++)
     {
         cout << i+1 << " sayilar: " ;
-        cin >> dizi[i];
+        if (!(cin >> dizi[i])) {
+            cerr << "Geçersiz tam sayı.\n";
+            return 1;
+        }
     }
 
     for (int i = 0; i < n; i++)

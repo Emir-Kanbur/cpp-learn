@@ -9,6 +9,7 @@ Eğer bir kişi 3 veya daha fazla ürün satın alırsa toplam fiyattan ekstra %
 Kullanıcının satın almak istediği ürün sayısını ve toplam alışveriş fiyatını alarak ödemesi gereken miktarı hesaplayın.
 */
 
+#include <cmath>
 #include <iostream>
 using namespace std;
 
@@ -18,10 +19,16 @@ int main () {
     double toplamFiyat , sonFiyat;
 
     cout << "Toplam ürün adedini giriniz: ";
-    cin >> urunSayisi;
+    if (!(cin >> urunSayisi) || urunSayisi < 0) {
+        cerr << "Geçersiz ürün adedi.\n";
+        return 1;
+    }
 
     cout << "Toplam alışveriş tutarını giriniz: ";
-    cin >> toplamFiyat;
+    if (!(cin >> toplamFiyat) || !std::isfinite(toplamFiyat) || toplamFiyat < 0) {
+        cerr << "Geçersiz alışveriş tutarı.\n";
+        return 1;
+    }
 
     if (toplamFiyat <=100) {
         sonFiyat=toplamFiyat;
@@ -32,7 +39,7 @@ int main () {
     else if (toplamFiyat <= 1000) {
         sonFiyat = toplamFiyat*0.85;
     }
-    else if (toplamFiyat >= 1000) {
+    else {
         sonFiyat = toplamFiyat*0.75;
     }
 

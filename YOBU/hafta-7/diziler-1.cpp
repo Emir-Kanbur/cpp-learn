@@ -3,13 +3,16 @@ using namespace std;
 
 int main () {
 
-     int boyut = 10;
+     constexpr int boyut = 10;
      int notlar [boyut];    //tanımlanmış değer de atanabilir.
 
      for (int i = 0; i<boyut; i++) 
      {
         cout << "Vize notlarını giriniz: ";
-        cin >> notlar[i];
+        if (!(cin >> notlar[i])) {
+            cerr << "Geçersiz not.\n";
+            return 1;
+        }
      }
      
      double toplam = 0;

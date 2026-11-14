@@ -7,7 +7,7 @@ Bu depo C++ öğrenme notları ve birbirinden bağımsız örneklerden oluşur. 
 1. Depoyu fork edin.
 2. Yeni bir branch açın (`feat/yeni-konu` gibi).
 3. Değişikliklerinizi yapın.
-4. Değişen `.cpp` dosyalarını C++17 ile derleyin.
+4. Yeni örnekleri `git add` ile izlemeye alın ve `bash scripts/check-build.sh` ile tüm örnekleri doğrulayın.
 5. Değişikliklerinizi açıklayan bir pull request açın.
 
 ## İçerik Kuralları

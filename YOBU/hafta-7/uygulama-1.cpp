@@ -1,18 +1,25 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int main(){
     int boyut;
     cout << "Dizinin boyutunu girin: ";
-    cin >> boyut;
+    if (!(cin >> boyut) || boyut <= 0) {
+        cerr << "Dizi boyutu pozitif bir tam sayı olmalı.\n";
+        return 1;
+    }
 
-    int dizi[boyut];
+    vector<int> dizi(boyut);
 
     cout << "Dizi elemanlarini girin:" << endl;
     for(int i = 0; i < boyut; i++)
     {
         cout << i + 1 << ". sayiyi girin: ";
-        cin >> dizi[i];
+        if (!(cin >> dizi[i])) {
+            cerr << "Geçersiz tam sayı.\n";
+            return 1;
+        }
     }
     
     int enBuyuk = dizi[0];

@@ -4,8 +4,6 @@ using namespace std;
 
 int main (){
     
-    bool kosul = true;
-    
     int sayi = 35;
 
     if (sayi<25) {

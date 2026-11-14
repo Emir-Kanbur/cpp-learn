@@ -4,7 +4,8 @@ using namespace std;
 int main () {
 
        
-    int  toplam , negatifSayi;
+    long long toplam = 0;
+    int negatifSayi = 0;
 
     //iki boyutlu matris 3*4 boyutunda
     int matris [3][4];
@@ -17,7 +18,10 @@ int main () {
                 for (int j = 0; j<4; j++)
                 {
                     cout << "Matris için gerekli sayıları giriniz: ";
-                    cin >> matris [i] [j]; 
+                    if (!(cin >> matris[i][j])) {
+                        cerr << "Geçersiz tam sayı.\n";
+                        return 1;
+                    }
 
                     if (matris[i][j] < 0 ){
                         toplam += matris [i][j];

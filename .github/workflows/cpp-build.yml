@@ -2,32 +2,26 @@ name: C++ Build Check
 
 on:
   push:
-    branches: ["main", "master"]
+    branches: [main]
   pull_request:
+
+permissions:
+  contents: read
 
 jobs:
   build:
+    name: C++17 (${{ matrix.compiler }})
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
     timeout-minutes: 5
-
+    strategy:
+      fail-fast: false
+      matrix:
+        compiler: [g++, clang++]
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Compile all C++ files
-        run: |
-          set -e
-          mkdir -p /tmp/cpp-build
-
-          while IFS= read -r -d '' file; do
-            output="/tmp/cpp-build/$(echo "$file" | tr '/ +' '___').out"
-            if grep -Eq '^[[:space:]]*int[[:space:]]+main[[:space:]]*\(' "$file"; then
-              echo "Compiling and linking: $file"
-              g++ -std=c++17 "$file" -o "$output"
-            else
-              echo "Compiling translation unit: $file"
-              g++ -std=c++17 -c "$file" -o "${output%.out}.o"
-            fi
-          done < <(find . -type f -name "*.cpp" -print0)
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Check examples
+        env:
+          CXX: ${{ matrix.compiler }}
+        run: bash scripts/check-build.sh

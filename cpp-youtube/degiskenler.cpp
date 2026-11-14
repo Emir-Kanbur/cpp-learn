@@ -16,6 +16,7 @@ int main (){
     cout <<metin <<endl;
     char karakter = 'e';
     bool dogru = true;
+    cout << kesir << ' ' << kesir2 << ' ' << karakter << ' ' << boolalpha << dogru << endl;
      tamsayi = 5;
      cout <<tamsayi <<endl;
      

@@ -22,8 +22,6 @@ int main ()
     cout << "Not Ortalamasi: " << harfNotOrtalamasi << endl;
     cout << "Quiz Ortalamasi: " << quizOrtalama << endl;
 
-    int x=10;
-    int y=20;
     int z=12 % 2; //mod (modulus) operatoru
     
     cout << z << endl;

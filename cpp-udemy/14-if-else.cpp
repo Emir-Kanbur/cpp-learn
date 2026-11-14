@@ -15,7 +15,7 @@ int main ()
 {
     bool sicakMi = true;
 
-    if (true)
+    if (sicakMi)
     {
         cout << "Ortam Sicak ( boolen) \n";
     }

@@ -11,17 +11,23 @@ int main () // main fonksiyonu
 
     cout << "sonuc: " << sonuc << endl;
 
-    int x, y, sonuc2;
+    int x, y;
 
     cout << "Birinci değeri giriniz: ";
-    cin >> x;
+    if (!(cin >> x)) {
+        cerr << "Geçersiz tam sayı.\n";
+        return 1;
+    }
 
     cout << "İkinci değeri giriniz: ";
-    cin >> y;
+    if (!(cin >> y)) {
+        cerr << "Geçersiz tam sayı.\n";
+        return 1;
+    }
 
-    sonuc2 = pow (x,y);
+    double sonuc2 = pow(x, y);
 
-    cout << "sonuc: " << sonuc << endl;
+    cout << "sonuc: " << sonuc2 << endl;
 
     int sonuc3;
 

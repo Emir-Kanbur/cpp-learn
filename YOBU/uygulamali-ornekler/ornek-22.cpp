@@ -17,10 +17,10 @@ int main () {
 
     int matematik=85 , fizik=70 , kimya=92 , biyoloji=78;
 
-    if (matematik < 50 | fizik < 50 | kimya < 50 | biyoloji < 50)
+    if (matematik < 50 || fizik < 50 || kimya < 50 || biyoloji < 50)
         cout << "Başarısız" << endl;
     
-    else if (matematik > 85 | fizik > 85 | kimya > 85 | biyoloji > 85)
+    else if (matematik > 85 || fizik > 85 || kimya > 85 || biyoloji > 85)
         cout << "Mükemmel" << endl;
 
     else 

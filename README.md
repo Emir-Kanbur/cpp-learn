@@ -15,8 +15,8 @@ C++ öğrenirken hazırladığım Türkçe notlar ve bağımsız örnek programl
 
 ## Gereksinimler
 
-- C++17 destekleyen bir derleyici (GCC veya Clang)
-- Git (depoyu klonlamak için)
+- C++17 destekleyen GCC veya Clang
+- Toplu doğrulama için Git, Bash ve derleyici araç zincirindeki `nm`
 
 ## Derleme ve çalıştırma
 
@@ -30,7 +30,11 @@ g++ -std=c++17 cpp-udemy/1-start.cpp -o build/app
 ./build/app
 ```
 
-`g++` yerine `clang++` kullanılabilir. Tüm örneklerin derlenebilirliği her push ve pull request'te GitHub Actions tarafından denetlenir.
+`g++` yerine `clang++` kullanılabilir. Tüm örnekleri doğrulamak için aşağıdaki komutu çalıştırın. Betik her kaynak dosyasını derler ve `main` içerenleri ayrıca çalıştırılabilir dosyaya bağlar. GitHub Actions aynı kontrolü GCC ve Clang ile çalıştırır.
+
+```sh
+CXX=clang++ bash scripts/check-build.sh
+```
 
 ## Kaynaklar ve lisans
 
