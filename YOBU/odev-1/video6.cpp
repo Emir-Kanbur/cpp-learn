@@ -55,13 +55,9 @@ int main () {
     /*  Mantıksal operatörler:
     Birleştirme operatörüdür. Sonucun true olması için her iki değerinde doğru olması gereklidir.   */
 
-    cout << (5==5) && (10<20);
+    cout << ((5 == 5) && (10 < 20)) << endl;
 
-    cout << "\b" << endl;
-
-    cout << (11==10) && (10<20);
-
-    cout << "\b" << endl;
+    cout << ((11 == 10) && (10 < 20)) << endl;
 
     /*  Arttırma ve Eksiltme Operatörleri:
     Değişkene tanımlanan değere arttırma veya eksiltme işlemlerini uygular. */
