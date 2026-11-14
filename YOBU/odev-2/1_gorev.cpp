@@ -1,7 +1,5 @@
 /*  
     1. Görev – Üç Sayıdan En Küçük ve En Büyüğü
-    Emir Kanbur
-
     Kullanıcıdan alınan 3 tam sayıyı, yazılan min3 ve max3 fonksiyonları ile 
     karşılaştırarak en küçüğünü ve en büyüğünü bulan program.
 */

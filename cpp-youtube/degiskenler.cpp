@@ -12,7 +12,7 @@ int main (){
 
     float kesir = 3.25;
     double kesir2 = 3.40;
-    string metin = "emir kanbur";
+    string metin = "Örnek Kullanıcı";
     cout <<metin <<endl;
     char karakter = 'e';
     bool dogru = true;
@@ -20,7 +20,7 @@ int main (){
      tamsayi = 5;
      cout <<tamsayi <<endl;
      
-metin="Merhaba,Ben C++.Tanıştığımıza memnun oldum Emir";
+metin="Merhaba,Ben C++.Tanıştığımıza memnun oldum Deneme";
 cout <<metin <<endl;
 
     //int tam sayılar içindir kesirli ifadeleri tanımlayamaz ve hata verir.

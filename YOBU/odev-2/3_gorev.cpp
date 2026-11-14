@@ -1,7 +1,5 @@
 /*
     3. Görev – 4 Sayıyı Dolaylı Yoldan Sıralama
-    Emir Kanbur
-
 int min4(int a, int b, int c, int d);
 Bu fonksiyonla önce en küçük sayıyı bulunuz. Daha sonra kalan üç sayı için
 min3 fonksiyonunu kullanarak 4 sayıyı küçükten büyüğe sıralı şekilde ekrana

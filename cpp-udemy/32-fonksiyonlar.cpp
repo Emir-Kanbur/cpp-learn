@@ -52,7 +52,7 @@ int main()
     cout << "\nhoscakalin\n" << endl;
     kareAlanHesaplama(6);
     kareAlanHesaplama(8);
-    isimCagirma("Emir");
+    isimCagirma("Deneme");
     cout << adSoyadBirlestirme();
 
 

@@ -4,8 +4,8 @@ using namespace std;
 
 int main () 
 {
-    string isim = "Emir Kanbur";
-    int dogumYili = 2006;
+    string isim = "Örnek Kullanıcı";
+    int ornekYil = 2030;
     float sayisalNotOrtalamasi = 3.27;
     double pi = 3.14159265358979323846264;
     bool sinifiGectiMi = true;
@@ -15,7 +15,7 @@ int main ()
     float quizOrtalama = (quizNot+quizNot2) / 2;
 
     cout << "Merhaba: " << isim << endl;
-    cout << "Doğum Yili: " << dogumYili << endl;
+    cout << "Örnek yıl: " << ornekYil << endl;
     cout << "Not Ortalamasi " << sayisalNotOrtalamasi << endl;
     cout << "Pi Sayisi " << pi << endl;
     cout << "Sinifi geçti mi? " << sinifiGectiMi << endl;

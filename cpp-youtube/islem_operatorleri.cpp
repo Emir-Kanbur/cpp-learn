@@ -50,8 +50,8 @@ cout<<"Bölüm:"<<kestirme<<endl;
 // İşlem operatörleri sadece dört işlem olarak kullanılmaz.Harflerde,kelimelerde ve hatta cümlelerde kullanılabilmektedir.
 
 string metin1 , metin2 ,sonucMETİN;
-metin1 = "Emir";
-metin2 = "Kanbur";
+metin1 = "Deneme";
+metin2 = "Örnek";
 
 sonucMETİN = metin1 +" "+ metin2;
 
